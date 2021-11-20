@@ -16,7 +16,6 @@ input {
     height: 60px;
     border: none;
     border-bottom: 1px solid rgba(60, 60, 67, 0.3);
-    background: transparent;
     text-align: center;
     font-family: SF Pro Text, sans-serif;
     font-style: normal;
@@ -32,6 +31,14 @@ input[type='text'] {
 
 input[type='password'] {
     color: black;
+}
+
+input[type='text'].error {
+    color: red;
+}
+
+input[type='password'].error {
+    color: red;
 }
 
 button {
@@ -51,6 +58,11 @@ button {
     /*color: #002DFF;*/
     cursor: pointer;
 }
+
+/*button.block {*/
+/*    background: rgba(116, 116, 128, 0.08);*/
+/*    color: rgba(60, 60, 67, 0.3);*/
+/*}*/
 
 .switch {
     display: flex;
